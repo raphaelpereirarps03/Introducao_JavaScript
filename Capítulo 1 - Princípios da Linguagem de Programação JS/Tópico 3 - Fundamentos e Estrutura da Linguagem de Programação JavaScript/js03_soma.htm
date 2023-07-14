@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando com JS</title>
+</head>
+<body>
+    <h3>Programa de Soma! </h3>
+    <p>Obs: Vai dar errado, o resultado será a concatenação dos valores digitados. Isso é proposital!</p>
+    <script language="JavaScript">
+    <!--
+        /*Objetivo capturar dois valores fornecidos pelo usuário, realizar a soma entre ambos e apresentar o resultado armazenado em uma 3ª variável; definiar as variáveis comprefixo js_
+        Para os elementos de Entrada: método prompt do objeto window
+        Para os elementos de Saída: método write do objeto documento 
+        */
+
+        /*Definição de variáveis*/
+        var js_v1;
+        var js_v2;
+        var js_result;
+        /*Entrada de dados*/
+        js_v1 = window.prompt ('Entre com o primeiro valor: ' , 'Digite o primeiro valor nesta caixa') ;
+        js_v2 = window.prompt ('Entre com o segundo valor: ' , 'Digite o segundo valor nesta caixa')
+
+        /*Processamento de dados*/
+        js_result = (js_v1) + (js_v2);
+        
+        /*Saída de dados*/
+        document.write ('O resultado é: ' +js_result); //Resultado
+    //-->
+    </script>
+</body>
+</html>

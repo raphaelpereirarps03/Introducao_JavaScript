@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando com JS - ParseInt (via Prompt)</title>
+</head>
+<body>
+    <h3>Programa de Soma com parseInt (via Prompt)!</h3>
+    
+    <script language="JavaScript">
+    <!--
+        /*Objetivo capturar dois valores fornecidos pelo usuário, realizar a soma entre ambos e apresentar o resultado armazenado em uma 3ª variável; definiar as variáveis comprefixo js_
+        Para os elementos de Entrada: método prompt do objeto window
+        Para os elementos de Saída: método write do objeto documento 
+        */
+
+        /*Definição de variáveis*/
+        var js_v1;
+        var js_v2;
+        var js_result;
+        /*Entrada de dados*/
+        js_v1 = parseInt(window.prompt ('Entre com o primeiro valor: ' , 'Digite o primeiro valor nesta caixa'));/*A conversão já está sendo feita no momento da entrada de dados*/
+        js_v2 = parseInt(window.prompt ('Entre com o segundo valor: ' , 'Digite o segundo valor nesta caixa'));/*A conversão já está sendo feita no momento da entrada de dados*/
+
+        /*Processamento de dados*/
+        js_result = js_v1 + js_v2;
+        
+        /*Saída de dados*/
+        document.write ('O resultado é: ' +js_result); //Resultado
+    //-->
+    </script>
+</body>
+</html>

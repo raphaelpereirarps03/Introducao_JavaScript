@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando com JS - ParseInt (via forms)</title>
+</head>
+<body>
+    <h3>Programa de Soma com parseInt e Formulário!</h3>
+    <!--Definição de elementos de um formulário-->
+    <form name="formSomatoria" action="" method="post">
+        Entre com o valor 1: <input type = "text" name = "f_v1"><p></p>
+        Entre com o valor 2: <input type = "text" name = "f_v2"><p></p>
+        <input type="button" name="btn_somar" value="SOMAR" onclick="soma()">
+        <input type="reset" name="btn_apagar" value="APAGAR">
+    </form>
+    <!--fim forms-->
+
+    <!--Inicio JS-->
+    <script language="JavaScript">
+    <!--
+        /*Objetivo capturar dois valores fornecidos pelo usuário, realizar a soma entre ambos e apresentar o resultado armazenado em uma 3ª variável; definir as variáveis com prefixo js_
+        Para os elementos de Entrada: método forms do objeto window
+        Para os elementos de Saída: método alert do objeto documento 
+        */
+
+        /*Definição de variáveis*/
+        var js_v1;
+        var js_v2;
+        var js_result;
+
+        /*Definindo a função soma() para capturar dados, processar a somátoria e apresentar o resultado*/
+        function soma() {
+           /*Entrada e dados*/
+           js_v1 = parseInt(document.formSomatoria.f_v1.value);
+           js_v2 = parseInt(document.formSomatoria.f_v2.value);
+           
+           /*Processamento de dados*/
+           js_result = js_v1 + js_v2;
+
+           /*Saída de dados*/
+           window.alert('O resultado da soma é: ' +js_result.toString());
+
+        }
+    //-->
+    </script>
+    <!--Fim do JS-->
+</body>
+</html>

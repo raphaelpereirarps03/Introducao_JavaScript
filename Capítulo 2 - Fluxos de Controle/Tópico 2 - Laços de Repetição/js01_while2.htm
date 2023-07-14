@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laço de Repetição While 2</title>
+</head>
+<body>
+    <script language = "JavaScript">
+    <!--
+        /*Objetivo: Executar uma sequência de comands por uma quantidade indeterminada de vezes utilizando uma variável de controle (valor lógica=true, por exemplo) no lugar de contadores delimitadores - O controle pode ser feito através de perguntas na tela utilizando o método confirm (ok ou cancelar, por exemplo). 
+        */
+
+        /*Definição de variáveis*/
+        var js_contador=1;
+        var js_resposta=true;
+        /*Laço de Repetição Condicional (while), utilizando o controle de limitação pelo usuário*/
+        while (js_resposta==true) {
+            document.write ('<p>' + js_contador + '&ordf; Repetição de uma única linha de comando dentro de um laço condicional: ');
+            js_resposta = window.confirm ('Deseja continuar?');
+            js_contador +=1;
+            
+        }
+    //-->
+    </script>
+    
+</body>
+</html>

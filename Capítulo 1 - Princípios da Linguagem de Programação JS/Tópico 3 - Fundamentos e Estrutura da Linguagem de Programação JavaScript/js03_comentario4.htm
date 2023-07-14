@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo Comentários em JS</title>
+</head>
+<body>
+    <h3>Programa de Boas Vindas!</h3>
+    
+    <script language="JavaScript">
+    <!--
+        /*Objetivo capturar o nome do usuário e apresentar uma saudação personalizada; definiar as variáveis comprefixo js_
+        Para os elementos de Entrada: método prompt do objeto window
+        Para os elementos de Saída: método write do objeto documento 
+        */
+
+        /*Definição de variáveis*/
+        var js_nome;
+
+        /*Entrada de dados*/
+        js_nome = window.prompt ('Entre com o seu nome: ' , 'Digite seu nome nesta caixa');
+        
+        /*Saída de dados*/
+        document.write ('Ol\u00e1, '  + js_nome + ', seja Bem Vindo!'); //Mensagem de saudação personalizada
+    //-->
+    </script>
+</body>
+</html>

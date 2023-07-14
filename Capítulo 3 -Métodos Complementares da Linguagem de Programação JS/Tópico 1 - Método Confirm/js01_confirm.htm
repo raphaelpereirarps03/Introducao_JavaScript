@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Confirm</title>
+</head>
+<body>
+    <script language="JavaScript">
+    <!--
+        /*Objetivo: Exibir através do objeto "window", dois botões para o usuário escolher qual ele apertará
+        e exibir a opção que o usuário digitou na tela.*/
+
+        //Declaração de variáveis
+        var js_resp=true;
+
+        /*Processamento de dados*/
+        js_resp = window.confirm('Escolha uma opção');
+        if (js_resp==true) {
+            document.write('Você escolheu o "OK"!');
+        } else {
+            document.write ('Você escolheu "CANCELAR"!');
+        }
+    //-->
+    </script>
+</body>
+</html>
